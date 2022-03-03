@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Track - Main</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&family=Poppins:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&family=Raleway:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&family=Roboto:wght@100;300;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <header class="container container-header">
+        <div class="menu-container">
+            <img src="./assets/img/perfil.jpg" alt="foto de perfil" class="img-config">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="row menu-container-text">
+            <p class="text-left text-wrap text-animation-xg">
+                Bom dia, <span class="profile-name">Paulo</span>
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-statistics">
+            <div class="row">
+                <h5 class="text-left test-nowrap category-title">
+                    Estatísticas
+                </h5>
+            </div>
+            <div class="legend-container">
+                <div class="graphic">
+                    <canvas class="doughnut-chart">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div class="card-main-container">
+            <div class="title-box card-main-text">
+                <h5 class="text-left category-title">
+                    Utilidades
+                </h5>
+            </div>
+            <div class="swiper swiperUtilities">
+                <div class="card-container swiper-wrapper">
+                    <div class="card card-config swiper-slide">
+                        <div class="card-body div-bpm card-red">
+                            <i class="bi bi-heart-fill"></i>
+                            <p class="card-title text-left">Batimentos Cardíacos</p>
+                            <p class="card-subtitle text-left">Confira com maior detalhes sua pressão arterial</p>
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                    </div>
+                    <div class="card card-config swiper-slide">
+                        <div class="card-body div-bpm card-green">
+                            <i class="bi bi-trophy-fill"></i>
+                            <p class="card-title text-left">Peso e Altura</p>
+                            <p class="card-subtitle text-left">Confira com maior detalhes seu peso e altura</p>
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                    </div>
+                    <div class="card card-config swiper-slide">
+                        <div class="card-body div-bpm card-yellow">
+                            <i class="bi bi-sun-fill"></i>
+                            <p class="card-title text-left">Alimentos ingeridos</p>
+                            <p class="card-subtitle text-left">Confira com maior detalhes sobre seus alimentos
+                                ingeridos</p>
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer class="footer-page">
+            <div class="credits">
+                <p class="creator">
+                    Pedro Lucas Lopes Paraguai
+                </p>
+            </div>
+            <div class="social-medias">
+                <a href="https://github.com/PedroLucasLopes">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pedro-lucas-lopes-paraguai/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+        integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

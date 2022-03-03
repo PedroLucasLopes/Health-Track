@@ -1,0 +1,15 @@
+:root {
+    --white: #f9f9f9;
+
+    --card-red: rgba(255, 0, 0, 0.8);
+    --card-green: rgba(158, 255, 0, 0.8);
+    --card-yellow: rgba(255, 214, 0, 0.8);
+
+    --card-red-active: rgb(196, 1, 1);
+    --card-green-active: rgba(112, 180, 3, 0.925);
+    --card-yellow-active: rgba(231, 201, 49, 0.932);
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
