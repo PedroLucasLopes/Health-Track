@@ -1,0 +1,62 @@
+body {
+    max-width: 767px;
+    height: 100%;
+    background-color: var(--card-red);
+    color: var(--white);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.header-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.header-text span {
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-text {
+    text-align: left;
+}
+
+.btn {
+    background-color: #f9f9f985;
+    color: var(--white);
+}
+
+.health {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-left: 3rem;
+}
+
+path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+}

@@ -126,7 +126,7 @@ body {
     font-size: .9rem;
     font-weight: 700;
     color: var(--white);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card-subtitle {
@@ -213,7 +213,7 @@ body {
     }
 
     .card-config:nth-child(2) .card-title {
-        margin-bottom: 30px;
+        margin-bottom: 1rem;
     }
 
     .card-subtitle {
@@ -240,26 +240,11 @@ body {
         animation: transitionAnim 1.2s ease-out;
     }
 
-    .card-body:hover > .bi-heart-fill {
-        animation: pulse .7s infinite forwards;
-    }
-
-    .card-body:hover > .bi-trophy-fill {
-        color: rgb(255, 217, 2);
-        text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.582);
-        transition: color .4s ease-in;
-        transition: text-shadow .4s ease-out;
-    }
-
-    .card-body:hover > .bi-sun-fill {
-        animation: animSun 3s infinite linear;
-    }
-
     .bi-plus-lg {
         display: block;
         position: absolute;
         right: 16px;
-        top: 48px;
+        top: 42%;
         font-size: 1.3rem;
         color: var(--white);
     }
@@ -312,26 +297,6 @@ body {
             transform: rotateZ(0deg);
         } 100% {
             transform: rotateZ(180deg);
-        }
-    }
-
-    @keyframes pulse {
-        0% {
-            font-size: 1rem;
-        } 50% {
-            font-size: .8rem;
-        }
-    }
-
-    @keyframes animSun {
-        0% {
-            color: var(--white);
-        } 25% {
-            color: rgb(255, 238, 2);
-        } 50% {
-            color: rgb(255, 166, 2);
-        } 75% {
-            color: rgb(255, 238, 2);
         }
     }
 }
