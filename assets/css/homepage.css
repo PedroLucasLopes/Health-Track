@@ -67,7 +67,7 @@ body {
 }
 
 .card-config:nth-child(2) .card-title {
-    margin-bottom: 54px;
+    margin-bottom: 38.5px;
 }
 
 .card-config:nth-child(3) {
@@ -122,6 +122,10 @@ body {
     color: var(--white);
 }
 
+.container-link {
+    text-decoration: none;
+}
+
 .card-title {
     font-size: .9rem;
     font-weight: 700;
@@ -133,6 +137,7 @@ body {
     font-size: .8rem;
     opacity: .6;
     line-height: 1.1;
+    color: black;
 }
 
 .bi-plus-lg {

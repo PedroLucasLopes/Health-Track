@@ -1,0 +1,127 @@
+body {
+    max-width: 767px;
+    height: 100%;
+}
+
+.container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.bi-arrow-left {
+    position: absolute;
+    left: 5px;
+    top: 13px;
+    color: black;
+}
+
+.text-header {
+    font-size: 1.1rem;
+    opacity: .7;
+    margin: .85rem;
+}
+
+.heart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.heart-icon {
+    width: 35%;
+    margin-right: 2rem;
+    margin-top: -3rem;
+    margin-left: 2rem;
+}
+
+.bi-heart-fill {
+    font-size: 5rem;
+    background: -webkit-linear-gradient(0deg, rgba(181,0,0,1) 0%, rgba(250,0,0,1) 35%, rgba(255,105,105,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: pulse 1.3s infinite ease-in-out;
+}
+
+.container-info {
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    margin-right: -2rem;
+    padding: 0 1rem .75rem 0;
+    width: 95%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+}
+
+.title-info {
+    font-weight: 600;
+    opacity: .8;
+}
+
+.subtitle-info,
+.bi-activity {
+    opacity: .7;
+}
+
+.footer-container {
+    margin: 1rem 1rem;
+    width: 90%;
+    border-radius: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.623);
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.445);
+    background-color: rgb(241, 64, 64);
+}
+
+.curiosity {
+    padding: 1rem;
+}
+
+.curiosity-title {
+    opacity: .8;
+    color: var(--white);
+    text-shadow: 5px 5px 6px rgb(75, 16, 16);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+    padding-bottom: .6rem;
+}
+
+.curiosity-subtitle {
+    opacity: .5;
+    color: var(--white);
+}
+
+.bi-arrow-right {
+    margin-left: 93%;
+    opacity: .5;
+    color: var(--white);
+}
+
+@keyframes pulse {
+    0% {
+        font-size: 5rem;
+    } 50% {
+        font-size: 4.7rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .bi-heart-fill {
+        font-size: 10rem;
+        margin-left: 5rem;
+    }
+
+    @keyframes pulse {
+        0% {
+            font-size: 10rem;
+        } 50% {
+            font-size: 9.7rem;
+        }
+    }
+}
