@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Track - Main</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&family=Poppins:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&family=Raleway:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&family=Roboto:wght@100;300;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+</head>
+
+<body>
+    <header class="container container-header">
+        <div class="menu-container">
+            <img src="../img/perfil.jpg" alt="foto de perfil" class="img-config">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="row menu-container-text">
+            <p class="text-left text-wrap text-animation-xg">
+                Bom dia, <span class="profile-name">Paulo</span>
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-statistics">
+            <div class="row">
+                <h5 class="text-left test-nowrap category-title">
+                    Estatísticas
+                </h5>
+            </div>
+            <div class="legend-container">
+                <div class="graphic">
+                    <canvas class="doughnut-chart">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div class="card-main-container">
+            <div class="title-box card-main-text">
+                <h5 class="text-left category-title">
+                    Utilidades
+                </h5>
+            </div>
+            <div class="swiper swiperUtilities">
+                <div class="card-container swiper-wrapper">
+                    <div class="card card-config swiper-slide">
+                        <div class="card-body div-bpm card-red">
+                            <i class="bi bi-heart-fill"></i>
+                            <p class="card-title text-left">Batimentos Cardíacos</p>
+                            <p class="card-subtitle text-left">Confira com maior detalhes sua pressão arterial</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card card-config swiper-slide">
+                        <div class="card-body div-bpm card-green">
+                            <i class="bi bi-trophy-fill"></i>
+                            <p class="card-title text-left">Peso e Altura</p>
+                            <p class="card-subtitle text-left">Confira com maior detalhes seu peso e altura</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card card-config swiper-slide">
+                        <div class="card-body div-bpm card-yellow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-sun-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg>
+                            <p class="card-title text-left">Alimentos ingeridos</p>
+                            <p class="card-subtitle text-left">Confira com maior detalhes sobre seus alimentos
+                                ingeridos</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="footer-page">
+        <div class="credits">
+            <p class="creator">
+                Pedro Lucas Lopes Paraguai
+            </p>
+        </div>
+        <div class="social-medias">
+            <a href="https://github.com/PedroLucasLopes">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pedro-lucas-lopes-paraguai/">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.5/dist/vivus.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+        integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/homepage.js"></script>
+</body>
+
+</html>
