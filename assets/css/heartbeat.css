@@ -80,7 +80,6 @@ body {
 }
 
 .curiosity-title {
-    opacity: .8;
     color: var(--white);
     text-shadow: 5px 5px 6px rgb(75, 16, 16);
     border-bottom: 1px solid rgba(0, 0, 0, 0.281);
@@ -88,7 +87,7 @@ body {
 }
 
 .curiosity-subtitle {
-    opacity: .5;
+    opacity: .9;
     color: var(--white);
 }
 
